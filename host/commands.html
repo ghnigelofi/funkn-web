@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Funkn - Commands</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> USELESS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.glitch.com/0485e0df-fe3a-487f-bc23-411759486712%2FFunknNewLogo.png?v=1607840027566"
+    />
+
+    <!-- import the stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the JS file -->
+    <meta name="theme-color" content="#0c3987" />
+    <script src="/script.js" defer></script>
+    <meta property="og:title" content="Funkn - Commands" />
+    <meta
+      property="og:description"
+      content="View all of Funkn's commands here."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.glitch.com/0485e0df-fe3a-487f-bc23-411759486712%2FFunknNewLogo.png?v=1607840027566"
+    />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://funkn.glitch.me/" />
+  </head>
+
+  <body>
+    <nav>
+      <div style="margin-left: 40px; margin-top: 5px;">
+      <a href="https://funkn.glitch.me/">
+        <img
+          src="https://cdn.glitch.com/0485e0df-fe3a-487f-bc23-411759486712%2FFunknNewLogo.png?v=1607840027566"
+          alt="Funkn."
+          style="width:70px; height:70px; position: absolute; top: 30px;"
+        />
+      </a>
+    </div>
+      <div>&nbsp</div>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Funkn</label>
+      
+      <ul>
+<li><a href="https://funkn.glitch.me/">Home</a></li>
+<li><a class="active" href="https://funkn.glitch.me/commands">Commands</a></li>
+<li><a href="https://funkn.glitch.me/changelogs">Changelogs</a></li>
+</ul>
+</nav>
+    &nbsp
+    <div class="content">
+      <h2 class="w800" style="margin-left: 30px;">Commands List</h2>
+      <p class="w650" style="margin-left: 30px; font-size: 22px">
+        &nbsp<br>
+        The command list is updated every major update.
+      </p>
+      <p class="w500" style="margin-left: 30px; font-size: 20px">
+        A complete list of Funkn's commands.<br />
+        Aliases also trigger commands, for ease.<br>&nbsp
+      </p>
+
+      <table
+        style="width: 95%; background-color: #364e78; margin-left:auto; margin-right:auto"
+      >
+        <caption class="w650">
+          All Commands<br />&nbsp
+        </caption>
+        <tr>
+          <th>Command</th>
+          <th>Description</th>
+          <th>Usage</th>
+          <th>Aliases</th>
+        </tr>
+        <tr>
+          <td>play</td>
+          <td>
+            Plays the first track it finds on YouTube.
+          </td>
+          <td>f.play [song]</td>
+          <td><code>p</code></td>
+        </tr>
+        <tr>
+          <td>search</td>
+          <td>search 10 songs, and pick which of them will play.</td>
+          <td>f.search [song]</td>
+          <td><code>find</code> <code>f</code></td>
+        </tr>
+        <tr>
+          <td>skip</td>
+          <td>skips the current song playing.</td>
+          <td>f.skip</td>
+          <td><code>s</code></td>
+        </tr>
+        <tr>
+          <td>skipto</td>
+          <td>skip to a certain song in queue.</td>
+          <td>f.skipto [queue #]</td>
+          <td><code>st</code> <code>jump</code></td>
+        </tr>
+        <tr>
+          <td>nowplaying</td>
+          <td>
+            sends the details of the current song playing.
+          </td>
+          <td>f.nowplaying</td>
+          <td><code>np</code></td>
+        </tr>
+        <tr>
+          <td>queue</td>
+          <td>returns the song queue for the server.</td>
+          <td>f.queue</td>
+          <td><code>q</code></td>
+        </tr>
+        <tr>
+          <td>remove</td>
+          <td>removes a song from the queue.</td>
+          <td>f.remove [queue no.]</td>
+          <td><code>r</code></td>
+        </tr>
+        <tr>
+          <td>clean</td>
+          <td>deletes 100 messages from Funkn.</td>
+          <td>f.clean</td>
+          <td><code>purge</code></td>
+        </tr>
+        <tr>
+          <td>move</td>
+          <td>move a song's position in the queue.</td>
+          <td>f.move [# of song to be moved] [new position]</td>
+          <td><code>m</code></td>
+        </tr>
+        <tr>
+          <td>removerange</td>
+          <td>remove a number of songs in the queue.</td>
+          <td>f.removerange [remove start #] [remove end #]</td>
+          <td><code>rr</code></td>
+        </tr>
+        <tr>
+          <td>pause</td>
+          <td>pauses the current song playing.</td>
+          <td>f.pause</td>
+          <td><code>pau</code></td>
+        </tr>
+        <tr>
+          <td>resume</td>
+          <td>resumes the current paused song.</td>
+          <td>f.resume</td>
+          <td><code>res</code></td>
+        </tr>
+        <tr>
+          <td>join</td>
+          <td>make Funkn join the voice channel you're in.</td>
+          <td>f.join</td>
+          <td><code>j</code></td>
+        </tr>
+        <tr>
+          <td>disconnect</td>
+          <td>disconnect Funkn from a voice channel.</td>
+          <td>f.disconnect</td>
+          <td><code>dc</code> <code>leave</code></td>
+        </tr>
+         <tr>
+          <td>volume</td>
+          <td>check, raise, or decrease the volume.</td>
+          <td>f.volume [number]</td>
+          <td><code>vol</code></td>
+        </tr>
+         <tr>
+          <td>lyrics</td>
+          <td>get lyrics from a song.</td>
+          <td>f.lyrics [song]</td>
+          <td><code>ly</code></td>
+        </tr>
+         <tr>
+          <td>clear</td>
+          <td>clear the whole song queue for the server.</td>
+          <td>f.clear</td>
+          <td>None</td>
+        </tr>
+         <tr>
+          <td>loop</td>
+          <td>loops the current track.</td>
+          <td>f.loop</td>
+          <td><code>lp</code></td>
+        </tr>
+        <tr>
+          <td>duplicate</td>
+          <td>duplicates the song once.</td>
+          <td>f.duplicate</td>
+          <td><code>dupe</code></td>
+        </tr>
+         <tr>
+          <td>ping</td>
+          <td>checks the API and Bot latencies.</td>
+          <td>f.ping</td>
+          <td><code>pp</code></td>
+        </tr>
+        <tr>
+          <td>replay</td>
+          <td>replays the current song playing.</td>
+          <td>f.replay</td>
+          <td><code>rep</code></td>
+        </tr>
+        <tr>
+          <td>spotify</td>
+          <td>fetches your Spotify user presence.</td>
+          <td>f.spotify</td>
+          <td><code>listening</code></td>
+        </tr>
+        <tr>
+          <td>shuffle</td>
+          <td>shuffle the queue made.</td>
+          <td>f.shuffle</td>
+          <td><code>sh</code> <code>shuf</code></td>
+        </tr>
+        <tr>
+          <td>bassboost</td>
+          <td>increase or decrease the bass.</td>
+          <td>f.bassboost [new bass number]</td>
+          <td><code>status</code></td>
+        </tr>
+         <tr>
+          <td>help</td>
+          <td>if you need help, call this command.</td>
+          <td>f.help</td>
+           <td><code>h</code> <code>commands</code></td>
+        </tr>
+         <tr>
+          <td>invite</td>
+          <td>invite Funkn to your server.</td>
+          <td>f.invite</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>24h</td>
+          <td>enable or disable 24 hour mode. Always free.</td>
+          <td>f.24h</td>
+          <td><code>24H</code> <code>h24</code></td>
+        </tr>
+        <tr>
+          <td>playlist</td>
+          <td>add, delete, or wipe clean your playlist library. ONLY YouTube playlists work!</td>
+          <td>f.playlist [add | delete | reset | library]</td>
+          <td><code>pl</code> <code>savedpl</code></td>
+        </tr>
+        <tr>
+          <td>prefix</td>
+          <td>changes Funkn's server prefix.'</td>
+          <td>f.prefix [new_prefix]</td>
+          <td><code>sp</code> <code>setprefix</code></td>
+        </tr>
+      </table>
+      <div>&nbsp</div>
+      <div>&nbsp</div>
+      <div>&nbsp</div>
+      </div>
+      <div style="background-color: #262b30; padding: 20px; width: 100%; right: 0;">
+        <p class="w550" style="margin-left: 20px; font-size: 95%; text-align: left;">
+          The <b class="w650">private</b> freemium Discord music bot.
+          <p class="w440" style="margin-left: 20px; font-size: 80%; text-align: left;">
+        Get a private, unparalleled music bot with Funkn.
+          </p>
+          <p class="w550" style="margin-left: 20px; font-size: 90%; text-align: left;">Learn more
+            <p class="w440" style="margin-left: 20px; font-size: 80%; text-align: left;">
+              <a class="noDec" style="color: #ffffff; font-size: 80%" href="https://funkn.glitch.me/support">Support</a><br/>
+              <a class="noDec" style="color: #ffffff; font-size: 80%" href="https://discord.gg/fVCpshnrAW">Our Discord</a><br/>
+            </p>
+        <p class="w550" style="margin-left: 20px; font-size: 90%; text-align: left;">2023 © ghnifizx</p>
+          </p>
+        </p>
+    </div>
+  </body>
+</html>
